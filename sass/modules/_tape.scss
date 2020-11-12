@@ -1,0 +1,13 @@
+.image-tape {
+    position: relative;
+
+    img:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    img:last-of-type {
+        height: 100%;
+    }
+}
