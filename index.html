@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favourite Things</title>
-</head>
-<body>
-    
-<script src="./js/main.js" type="module"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favourite Things</title>
+        <link rel="stylesheet" href="css/master.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="popupBackdrop">
+            <div class="popupCard">
+                <div class="image-tape">
+                    <img class="tape" src="./images/tape.svg" alt="tape" />
+                    <img src="" alt="favourite item"></image>
+                </div>
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="wrapping-div">
+            <header>
+                <div class="title_container">
+                    <hr class="small_hr">
+                    <h1>My Favorite Things</h1>
+                    <p>Click on a card to see a description of the item</p>
+                    <hr class="small_hr">
+                </div>
+            </header>
+            <main>
+                <div class="cards-thumbnails"></div>
+            </main>
+        </div>
+
+        <!-- Templates for cards-->
+        <template id="small-card">
+            <div class="card-small">
+                <div class="image-tape">
+                    <img src="./images/tape.svg" alt="tape" />
+                    <img src="" alt="" />
+                </div>
+                <h2></h2>
+            </div>
+        </template>
+        <script src="./js/main.js" type="module"></script>
+    </body>
 </html>
